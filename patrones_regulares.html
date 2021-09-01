@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrones Regulares</title>
+    <style>
+        input:focus{
+            outline: none;
+        }
+        input:valid:focus{
+            border: 1px solid green;
+        }
+
+        input:invalid:focus{
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -12,9 +24,9 @@
         <br>
         <input type="text" placeholder="Apellido" min="6" max="20" required pattern="[A-Za-z]+">
         <br>
-        <input type="number" min="18" max="66" placeholder="Edad">
+        <input type="number" min="18" max="66" placeholder="Edad" required>
         <br>
-        <input type="email" placeholder="Correo">
+        <input type="email" placeholder="Correo" required>
         <br>
         <button>Enviar</button>
     
